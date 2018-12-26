@@ -11,7 +11,7 @@ float potencia(float base, int exponente) {
 
 
 int main() {
-    float x, y, resultado;
+    float x, y, z, resultado;
     char op;
     int valido = 1;
 
@@ -22,9 +22,13 @@ int main() {
     printf("Ingrese y: ");
     scanf("%f", &y);
 
+    printf("Ingrese z: ");
+    scanf("%f", &z);
+	
+
     switch (op) {
         case '+':
-            resultado = x + 2*y;
+            resultado = x + y + z;
             break;
         case '-':
             resultado = x - y;
